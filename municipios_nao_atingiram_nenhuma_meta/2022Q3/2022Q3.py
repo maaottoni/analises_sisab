@@ -28,7 +28,10 @@ def analise_sisab (df:pd.DataFrame, municipios:list):
     return df_consolidado
 
 
-data = analise_sisab(df, municipios)
-print(data['municipio_uf'].nunique())
+#data = analise_sisab(df, municipios)
+#print(data['municipio_uf'].nunique())
 #print(df)
 #data.to_csv(r'C:\Users\maira\Impulso\analises_sisab\municipios_nao_atingiram_nenhuma_meta\2022Q3\2022Q3_municipios_nao_atingiram_nenhuma_meta.csv')
+
+selecao = df.loc[df['municipio_id_sus']==421550]
+print(selecao)
